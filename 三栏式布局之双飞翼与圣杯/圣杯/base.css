@@ -1,0 +1,182 @@
+/*
+#container{
+    padding: 0px 120px 0 140px;
+}
+
+#main{
+    width: 100%;
+    position: relative;
+    background: #2196F3;
+}
+
+#left{
+    width: 140px;
+    margin-left: -100%;
+    left: -140px;
+    position: relative;
+    background: greenyellow;
+}
+
+#right{
+    width: 120px;
+    margin-left: -120px;
+    right: -120px;
+    position: relative;
+    background: red;
+}
+*/
+*{
+    margin: 0;padding: 0;
+}
+header{
+    background-color: #1976D2;
+    height: 60px;
+    font-size: 14px;
+    position: relative;
+}
+footer{
+    background-color: #1976D2;
+    height: 60px;
+    font-size: 14px;
+}
+p,ul,dl,span{
+    font-size: 12px;
+}
+body{
+    font-family: 'Microsoft YaHei';
+}
+h2{
+    margin: 10px 0;
+}
+/*设置头部*/
+header h1 a{
+    display: inline-block;
+    float: left;
+}
+header img{
+    height: 60px;
+}
+div#nav{
+    background-color: #1976D2;
+    height:60px;
+}
+div#nav ul{
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+div#nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 10px;
+    border-right: solid 1px #2196F3;
+    -webkit-transition: background 0.5s linear;
+}
+div#nav nav li.on, div#nav nav li:hover{
+    background-color: #2196F3;
+}
+div#nav nav a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/*设置中部*/
+div{
+    background: #EEEEEE;
+    padding: 20px 160px 20px 240px;
+    margin: 20px;
+    border: 1px solid #2196F3;
+    box-sizing: border-box;
+    overflow: auto;
+}
+article,aside{
+    background: #FFFFFF;
+    border: solid 1px #2196F3;
+}
+
+.main{
+    float: left;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.main p{
+    line-height: 20px;
+    margin: 10px 0;
+}
+
+.zhengwen{
+    text-indent: 2em;
+}
+.main p a{
+    text-decoration: none;
+}
+
+.main p a:hover{
+    color:#FF0000;
+}
+
+
+/*左侧*/
+.left{
+    width: 200px;
+    float: left;
+    position: relative;
+    margin-left: -100%;
+    box-sizing: border-box;
+    left: -220px;
+    padding: 20px;
+}
+
+.left img{
+    width: 80px;
+    height: 80px;
+}
+.left span{
+    vertical-align: top;
+}
+/*右侧*/
+.right{
+    width: 120px;
+    float: left;
+    position: relative;
+    margin-left: -120px;
+    right: 0px;
+    text-align: center;
+    box-sizing: border-box;
+    right: -140px;
+}
+.right h2{
+    width: 75px;
+}
+.right dl{
+    margin: 20px;
+}
+
+.right dl dd{
+    text-align: center;
+    width: 70px;
+}
+
+.right dl dd span{
+    display: block;
+    margin-bottom:10px;
+}
+
+.right dl dd img{
+    width: 70px;
+    height: 70px;
+}
+
+/*设置footer*/
+footer{
+    clear: both;
+}
+
+footer p{
+    text-align: center;
+    line-height: 60px;
+    color: #FFFFFF;
+}
