@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>布局</title>
+    <link rel="stylesheet" type="text/css" href="base.css">
+</head>
+<body>
+<div class="top">
+    <div id="title">
+        <h2>布局</h2>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="http://legolas.github.io">Github</a> </li>
+            <li><a href="http://blog.csdn.net/usher_ou">CSDN</a> </li>
+            <li><a href="http://usherblog.site">个人博客</a> </li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+    <div id="sidebar" class="solid-border">
+        <h2>注册窗口</h2>
+        <form method="post" action="">
+            <div class="line">
+                <label class="prompt" for="mail-address">请输入邮箱地址</label>
+                <input type="text" id="mail-address" value="这是一个文本输入框" />
+            </div>
+            <div class="line">
+                <span class="prompt"></span>
+                <label class="hint">邮箱地址请按要求格式输入</label>
+            </div>
+            <div class="line">
+                <label class="prompt" for="mail-password">请输入密码</label>
+                <input type="password" id="mail-password" value="123" placeholder="这是一个文本输入框" />
+            </div>
+            <div class="line">
+                <label class="prompt" for="repeat-password">请重复输入密码</label>
+                <input type="password" id="repeat-password" value="123" placeholder="这是一个文本输入框" />
+            </div>
+            <div class="line">
+                <span class="prompt"></span>
+                <label class="hint">密码请为6-16位英文数字</label>
+            </div>
+            <div class="line">
+                <label class="prompt">性别</label>
+                <input type="radio" name="gender" id="male" /><label for="male">男</label>
+                <input type="radio" name="gender" id="female" /> <label for="female">女</label>
+            </div>
+            <div class="line">
+                <label class="prompt">城市</label>
+                <select>
+                    <option value="北京">北京</option>
+                    <option value="上海">上海</option>
+                    <option value="杭州">杭州</option>
+                    <option value="深圳">深圳</option>
+                </select>
+            </div>
+            <div class="line">
+                <label class="prompt">爱好</label>
+                <input type="checkbox" name="sport" id="sport" /><label for="sport">运动</label>
+                <input type="checkbox" name="art" id="art" /><label for="art">艺术</label>
+                <input type="checkbox" name="science" id="science" /><label for="science">科学</label>
+            </div>
+            <div class="line">
+                <label class="prompt">个人描述</label>
+                <textarea cols="100" rows="5">这是一个多行输入框，输入您的个人描述</textarea>
+            </div>
+            <div class="submitDiv">
+                <input id="submitBtn" type="submit" name="submitBtn" value="确认提交" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="content">
+    <div class="article solid-border">
+        <h2>我们并不真正懂得爱</h2>
+        <h3>我们并不真正懂得爱</h3>
+        <p class="author">作者：<span>芭芭拉•弗雷德里克森 </span>&nbsp;&nbsp;文章发表时间：2017-9-23</p>
+        <p class="content">想要充分地了解爱这门新科学的内涵，你需要暂且退后一步，与此前所了解的“爱”保持距离—忘掉通常在广播中听到的有关爱的信息，忘掉那些关于渴望获得新感情慰藉的老生常谈。不去理会所谓家庭可能给予你的爱，不去理会亲人的行为让你感到不舒服或他们的淡漠让你心生寒意，都要无条件地去爱你的亲人。我甚至还要要求你暂时不要把爱看作一种特殊的纽带或关系—无论是与你的配偶、伴侣或灵魂伴侣—都请将这样的“爱”暂且搁置一边。如果你认为爱是由婚姻或其他忠诚的仪式衍生的某种义务、承诺或信守，那么请准备好来个180 度的大逆转。我需要你远离所有先入为主的观念，考虑对“爱”做一次全面升级。本书提供了一个全新的视野—从你的身体出发来看待爱。
+
+            如果现在有个记者或是某个喜欢刨根问底的人询问你对于爱的看法，你的答案很可能掺杂了大家共有的文化认知和你从以往的经历中获得的深层体会。不管你的答案听上去多么令人信服，我打赌，你的身体对爱自有其定义方式，而且是相当不同的方式。这就是本书的主题。爱不是性欲，不是血缘至亲，也不是某种特殊的纽带、承诺或誓言。当然，爱与这些重要的概念都密切相关。不过我
+
+            认为，所有这些概念都不能像你的身体一样捕捉到爱的真正内涵。</p>
+
+    </div>
+    <div class="article solid-border">
+        <h2>我们并不真正懂得爱</h2>
+        <h3>我们并不真正懂得爱</h3>
+        <p class="author">作者：<span>芭芭拉•弗雷德里克森 </span>&nbsp;&nbsp;文章发表时间：2017-9-23</p>
+        <p class="content">想要充分地了解爱这门新科学的内涵，你需要暂且退后一步，与此前所了解的“爱”保持距离—忘掉通常在广播中听到的有关爱的信息，忘掉那些关于渴望获得新感情慰藉的老生常谈。不去理会所谓家庭可能给予你的爱，不去理会亲人的行为让你感到不舒服或他们的淡漠让你心生寒意，都要无条件地去爱你的亲人。我甚至还要要求你暂时不要把爱看作一种特殊的纽带或关系—无论是与你的配偶、伴侣或灵魂伴侣—都请将这样的“爱”暂且搁置一边。如果你认为爱是由婚姻或其他忠诚的仪式衍生的某种义务、承诺或信守，那么请准备好来个180 度的大逆转。我需要你远离所有先入为主的观念，考虑对“爱”做一次全面升级。本书提供了一个全新的视野—从你的身体出发来看待爱。
+
+            如果现在有个记者或是某个喜欢刨根问底的人询问你对于爱的看法，你的答案很可能掺杂了大家共有的文化认知和你从以往的经历中获得的深层体会。不管你的答案听上去多么令人信服，我打赌，你的身体对爱自有其定义方式，而且是相当不同的方式。这就是本书的主题。爱不是性欲，不是血缘至亲，也不是某种特殊的纽带、承诺或誓言。当然，爱与这些重要的概念都密切相关。不过我
+
+            认为，所有这些概念都不能像你的身体一样捕捉到爱的真正内涵。</p>
+        <img src="pic2.jpg">
+        <ul>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+        </ul>
+    </div>
+    <div class="article solid-border">
+        <h2>图片</h2>
+        <div class="pictures">
+            <div class="picture">
+                <p>好看的图片1</p>
+                <img src="pic4.jpg" alt="加载失败" title="Java 图标">
+            </div>
+            <div class="picture">
+                <p>好看的图片1</p>
+                <img src="pic4.jpg" alt="加载失败" title="Java 图标">
+            </div>
+            <div class="picture">
+                <p>好看的图片1</p>
+                <img src="pic4.jpg" alt="加载失败" title="Java 图标">
+            </div>
+            <div class="picture">
+                <p>好看的图片1</p>
+                <img src="pic4.jpg" alt="加载失败" title="Java 图标">
+            </div>
+            <div class="picture">
+                <p>好看的图片1</p>
+                <img src="pic4.jpg" alt="加载失败" title="Java 图标">
+            </div>
+            <div class="picture">
+                <p>好看的图片1</p>
+                <img src="pic4.jpg" alt="加载失败" title="Java 图标">
+            </div>
+            <div class="picture">
+                <p>好看的图片1</p>
+                <img src="pic4.jpg" alt="加载失败" title="Java 图标">
+            </div>
+            <div class="picture">
+                <p>好看的图片1</p>
+                <img src="pic4.jpg" alt="加载失败" title="Java 图标">
+            </div>
+            <div class="picture">
+                <p>好看的图片1</p>
+                <img src="pic4.jpg" alt="加载失败" title="Java 图标">
+            </div>
+            <div class="picture">
+                <p>好看的图片1</p>
+                <img src="pic4.jpg" alt="加载失败" title="Java 图标">
+            </div>
+            <div class="picture">
+                <p>好看的图片1</p>
+                <img src="pic4.jpg" alt="加载失败" title="Java 图标">
+            </div>
+            <div class="picture">
+                <p>好看的图片1</p>
+                <img src="pic4.jpg" alt="加载失败" title="Java 图标">
+            </div>
+            <div class="picture">
+                <p>好看的图片1</p>
+                <img src="pic4.jpg" alt="加载失败" title="Java 图标">
+            </div>
+        </div>
+    </div>
+    <div class="article solid-border">
+        <h2>最后一篇文章一级标题</h2>
+        <h3>文章二级标题</h3>
+        <p class="author">文章作者：Brian Way&nbsp;&nbsp;文章发表时间：2017.3.10</p>
+        <ol>
+            <li>排名1</li>
+            <li>排名2</li>
+            <li>排名3</li>
+        </ol>
+        <p>下面是一个表格，给表哥家了一个 border="1"，好看出是个表格</p>
+        <table border="1">
+            <tr>
+                <th>表头</th>
+                <th>表头</th>
+                <th>表头</th>
+            </tr>
+            <tr>
+                <td>表内容单元</td>
+                <td>表内容单元</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr>
+                <td>表内容单元</td>
+                <td>表内容单元</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr>
+                <td>表内容单元</td>
+                <td>表内容单元</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr>
+                <td class="total">总计</td>
+                <td colspan="2" class="total">1000</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+<div class="bottom">版权所有©️</div>
+</body>
+</html>
