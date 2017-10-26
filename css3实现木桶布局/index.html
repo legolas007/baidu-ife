@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3图片木桶布局</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+        }
+        body{
+            padding: 50px 0;
+            overflow-x: hidden;
+        }
+        .wrap{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .wrap img{
+            margin: 3px;
+            padding: 5px;
+            height: 200px;
+            background: #cccccc;
+            flex-grow: 1;//以充满整行
+            object-fit: cover;//以解决图片变形
+            transition: .3s;
+        }
+        .wrap:after{
+            display: block;
+            content: '';
+            flex-grow:9999;//且值足够高 以解决最后一行图片数量少时仍然充满整行过于扁长
+        }
+        .wrap img:hover{
+            transform: scale(1.5);
+            box-shadow: 0 0 20px pink;
+            z-index: 9999;
+
+        }
+    </style>
+</head>
+<body>
+<div class="wrap"></div>
+<script type="text/javascript">
+    var wrap = document.querySelector('.wrap');
+    var src = ['95.jpg','65827_1152X960.jpg','127600_1152X960.jpg','QQ图片20171013172640.png','萝莉 (2).jpg']
+    for(var i = 0;i < Math.floor(Math.random()*10 + 30);i++){
+        var img = document.createElement('img')
+        img.src = src[Math.floor(Math.random()*5)]
+        wrap.appendChild(img)
+    }
+</script>
+</body>
+</html>
