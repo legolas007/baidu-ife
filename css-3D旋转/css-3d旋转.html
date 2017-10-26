@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>css-3D</title>
+<style type="text/css">
+/*容器*/
+.container {
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -ms-perspective: 1000px;
+    perspective: 1000px;
+}
+/*piece盒子*/
+.piece-box {
+    position: relative;
+    width: 200px;
+    height: 400px;
+    margin: 300px auto;
+    perspective-origin: 50% 50%;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    animation: pieceRotate 10s;
+    -moz-animation: pieceRotate 10s; /* Firefox */
+    -webkit-animation: pieceRotate 10s infinite; /* Safari and Chrome */
+    -o-animation: pieceRotate 10s ; /* Opera */
+}
+/*走马灯动画*/
+@keyframes pieceRotate
+{
+0%   {-webkit-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        transform: rotateY(0deg);}
+100% {-webkit-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+        transform: rotateY(360deg);}
+}
+/* Firefox */
+@-moz-keyframes pieceRotate
+{
+0%   {-webkit-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        transform: rotateY(0deg);}
+100% {-webkit-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+        transform: rotateY(360deg);}
+}
+/* Safari and Chrome */
+@-webkit-keyframes pieceRotate
+{
+0%   {-webkit-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        transform: rotateY(0deg);}
+100% {-webkit-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+        transform: rotateY(360deg);}
+}
+/* Opera */
+@-o-keyframes pieceRotate
+{
+0%   {-webkit-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        transform: rotateY(0deg);}
+100% {-webkit-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+        transform: rotateY(360deg);}
+}
+/*piece通用样式*/
+.piece {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: red;
+    opacity: 0.5;
+ 
+}
+.piece-1 {
+    background: #FF6666;
+    -webkit-transform: rotateY(0deg) translateZ(173.2px);
+    -ms-transform: rotateY(0deg) translateZ(173.2px);
+    -o-transform: rotateY(0deg) translateZ(173.2px);
+    transform: rotateY(0deg) translateZ(173.2px);
+ 
+}
+.piece-2 {
+    background: #FFFF00;
+    -webkit-transform: rotateY(60deg) translateZ(173.2px);
+    -ms-transform: rotateY(60deg) translateZ(173.2px);
+    -o-transform: rotateY(60deg) translateZ(173.2px);
+    transform: rotateY(60deg) translateZ(173.2px);
+}
+.piece-3 {
+    background: #006699;
+    -webkit-transform: rotateY(120deg) translateZ(173.2px);
+    -ms-transform: rotateY(120deg) translateZ(173.2px);
+    -o-transform: rotateY(120deg) translateZ(173.2px);
+    transform: rotateY(120deg) translateZ(173.2px);
+}
+.piece-4 {
+    background: #009999;
+    -webkit-transform: rotateY(180deg) translateZ(173.2px);
+    -ms-transform: rotateY(180deg) translateZ(173.2px);
+    -o-transform: rotateY(180deg) translateZ(173.2px);
+    transform: rotateY(180deg) translateZ(173.2px);
+}
+	
+.piece-5 {
+    background: #FF0033;
+    -webkit-transform: rotateY(240deg) translateZ(173.2px);
+    -ms-transform: rotateY(240deg) translateZ(173.2px);
+    -o-transform: rotateY(240deg) translateZ(173.2px);
+    transform: rotateY(240deg) translateZ(173.2px);
+}
+.piece-6 {
+    background: #FF6600;
+    -webkit-transform: rotateY(300deg) translateZ(173.2px);
+    -ms-transform: rotateY(300deg) translateZ(173.2px);
+    -o-transform: rotateY(300deg) translateZ(173.2px);
+    transform: rotateY(300deg) translateZ(173.2px);
+}
+	
+
+</style>
+<script type="text/javascript" >
+
+	</script>
+</head>
+
+<body>
+<div class="container">
+    <div class="piece-box">
+        <div class="piece piece-1" id="div1"> </div>
+        <div class="piece piece-2" id="div2"></div>
+        <div class="piece piece-3" id="div3"></div>
+        <div class="piece piece-4" id="div4"></div>
+        <div class="piece piece-5" id="div5"></div>
+        <div class="piece piece-6" id=div6></div>
+    </div>
+</div>
+</body>
+</html>
